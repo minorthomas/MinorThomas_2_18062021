@@ -17,6 +17,8 @@ a{
 	text-decoration: none;
 }
 
+/*****NAVBAR*****/
+
 .navbar{
 	display: grid;
 	grid-auto-columns: 1fr 1fr;
@@ -55,6 +57,39 @@ a{
 	grid-area: navbar__button--activity;
 	border-bottom: solid 3px #DEEBFF;
 }
+
+/*****RESEARCHBAR*****/
+
+.researchbar h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 1.1em;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.researchbar h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.researchbar__search{
+	border: solid 1px red;
+}
+
+.researchbar__search i{
+	display: inline-block;
+	background-color: #F2F2F2;
+	padding: 10px;
+}
+
+.researchbar_mobilehidden{
+	visibility: hidden;
+}
+
+
 
 @media only screen and (min-width: 600px) {
 	.navbar{
