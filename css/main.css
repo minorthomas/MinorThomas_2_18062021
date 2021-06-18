@@ -90,7 +90,7 @@ a{
 #research__position__icon{
 	align-content: center;
 	background-color: #F2F2F2;
-	padding: 14px 13px 14px 13px;
+	padding: 13px 13px 13px 13px;
 	font-size: 0.85em;
 	border: solid 1px #F2F2F2;
 	border-radius: 12px 0px 0px 12px;
@@ -101,6 +101,7 @@ a{
 }
 
 .researchbar__example{
+	font-family: 'Raleway', sans-serif;
 	border-top: solid 1px #F2F2F2;
 	border-bottom: solid 1px #F2F2F2;
 	border-left: none;
@@ -108,17 +109,17 @@ a{
 	width: 270px;
 	padding: 0 0 0 25px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	opacity: 1;
+	font-weight: bold;
+	outline: none;
 }
 
 #research__search__icon{
-	display: block;
+	display: inline-block;
 	position: absolute;
 	left: 315px;
 	background-color: #0065FC;
 	color: #FFF;
-	padding: 16px 14px 15px 14px;
+	padding: 15px 14px 15px 14px;
 	font-size: 0.75em;
 	border-radius: 12px 12px 12px 12px;
 	-webkit-border-radius: 12px 12px 12px 12px;
@@ -127,37 +128,106 @@ a{
 	-o-border-radius: 12px 12px 12px 12px;
 }
 
+/*****FILTERBAR*****/
 
-
-
-@media only screen and (min-width: 600px) {
-	.navbar{
-		display: grid;
-		grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
-	}
-
-	.navbar__button{
-		border-top: solid 3px transparent;
-		border-bottom: none;
-		padding-top: 10px;
-	}
-
-	.heberg{
-		border-top: solid 3px #0065FC;
-	}
-
-	.signup{
-		justify-self: center;
-	}
+.filterbar h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.95em;
+	font-weight: 800;
+	margin: 20px 0 0 0;
 }
 
-@media only screen and (min-width: 965px) {
-	.navbar{
-		display: grid;
-		grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
-	}
+.filterbar__link{
+	font-family: 'Raleway', sans-serif;
+	padding: 5px 15px 10px 5px;
+	font-weight: 800;
+	font-size: 0.9em;
+}
+
+.filterbar__nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.filterbar__button{
+	display: inline-block;
+	border: solid 2px #F2F2F2;
+	margin-top: 8px;
+	border-radius: 50px 50px 50px 50px;
+	-webkit-border-radius: 50px 50px 50px 50px;
+	-moz-border-radius: 50px 50px 50px 50px;
+	-ms-border-radius: 50px 50px 50px 50px;
+	-o-border-radius: 50px 50px 50px 50px;
+}
+
+#filter_economy_icon{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border: solid 1px transparent;
+	padding: 12px 10px 12px 10px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#filter_family_icon{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border: solid 1px transparent;
+	padding: 12px 14px 12px 14px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#filter_heart_icon{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border: solid 1px transparent;
+	padding: 12px 12px 12px 12px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#filter_pets_icon{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border: solid 1px transparent;
+	padding: 12px 11px 12px 11px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#filterbar_info_icon{
+	display: block;
+	position: absolute;
+	font-size: 0.8em;
+	border: solid 1px #DEEBFF;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	padding: 6px 8px 6px 9px;
+	color: #0065FC;
+	margin-top: 17px;
+}
+
+.filterbar__info p{
+	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+	padding-left: 35px;
+	margin-top: 20px;
 }

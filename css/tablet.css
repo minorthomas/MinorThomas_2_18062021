@@ -1,0 +1,31 @@
+@media only screen and (min-width: 600px) {
+	.navbar{
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
+	}
+
+	.navbar__button{
+		border-top: solid 3px transparent;
+		border-bottom: none;
+		padding-top: 10px;
+	}
+
+	.heberg{
+		border-top: solid 3px #0065FC;
+	}
+
+	.signup{
+		justify-self: center;
+	}
+}
+
+@media only screen and (min-width: 965px) {
+	.navbar{
+		display: grid;
+		grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
+	}
+}

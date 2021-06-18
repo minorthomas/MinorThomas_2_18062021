@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <!--------------------FONT-------------------->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,13 +36,25 @@
         <div class="filterbar">
             <h2>Filtres</h2>
             <nav class="filterbar__nav">
-                <a href="#">Économie</a>
-                <a href="#">Familial</a>
-                <a href="#">Romantique</a>
-                <a href="#">Animaux autorisés</a>
+                <div class="filterbar__button economy">
+                    <i class="fas fa-money-bill-wave" id="filter_economy_icon"></i>
+                    <a class="filterbar__link" href="#">Économique</a>
+                </div>
+                <div class="filterbar__button family">
+                    <i class="fas fa-child" id="filter_family_icon"></i>
+                    <a class="filterbar__link" href="#">Familial</a>
+                </div>
+                <div class="filterbar__button romantic">
+                    <i class="fas fa-heart" id="filter_heart_icon"></i>
+                    <a class="filterbar__link" href="#">Romantique</a>
+                </div>
+                <div class="filterbar__button petsallowed">
+                    <i class="fas fa-dog" id="filter_pets_icon"></i>
+                    <a class="filterbar__link" href="#">Animaux autorisés</a>
+                </div>
             </nav>
             <div class="filterbar__info">
-                <img src="assets/img/">
+                <i class="fas fa-info" id="filterbar_info_icon"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
