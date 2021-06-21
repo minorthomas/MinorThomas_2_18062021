@@ -294,8 +294,8 @@ a{
 /*****POPULAR CARDS*****/
 
 .popular{
-	background-color: #F2F2F2;
-	grid-area: popular_cards_grid;
+		background-color: #F2F2F2;
+		grid-area: popular_cards_grid;
 }
 
 .popular__title{
