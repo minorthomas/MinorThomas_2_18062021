@@ -44,11 +44,11 @@ a{
 	padding-top: 10px;
 }
 .signup{
+	grid-area: navbar__button--signup;
 	justify-self: end;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	color: #0065FC;
-	grid-area: navbar__button--signup;
 	padding-right: 25px;
 	padding-top: 10px;
 }
@@ -230,4 +230,31 @@ a{
 	display: inline-block;
 	padding-left: 35px;
 	margin-top: 20px;
+}
+
+/*****POPULAR CARDS*****/
+
+.cardsgrid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+	grid-template-areas: "popular_cards_grid"
+						 "accomodate_cards_grid"
+						 "activity_cards_grid";
+}
+
+.cards{
+	background-color: #F2F2F2;
+}
+
+.popular{
+	grid-area: popular_cards_grid;
+}
+.accommodate{
+	grid-area: accomodate_cards_grid;
+}
+.activity{
+	grid-area: activity_cards_grid;
 }
