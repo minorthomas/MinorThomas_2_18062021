@@ -258,16 +258,8 @@ a{
 	-o-border-radius: 20px;
 }
 
-.cardsgrid h2{
-	margin: 20px 0 0 20px;
-}
-
-.cardsgrid p{
-	margin: 5px 0 0 20px;
-}
-
-.stars{
-	margin-top: 35px;
+.cardsgrid h2, .cardsgrid p{
+	margin-left: 20px;
 }
 
 .blue__star{
@@ -321,6 +313,12 @@ a{
 	-moz-border-radius: 20px 0 0 20px;
 	-ms-border-radius: 20px 0 0 20px;
 	-o-border-radius: 20px 0 0 20px;
+}
+
+.cardsdesc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 /*****ACCOMMODATE CARDS*****/
