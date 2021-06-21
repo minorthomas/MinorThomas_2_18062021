@@ -238,7 +238,7 @@ a{
 	font-family: 'Raleway', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 35em 56em 48em;
+	grid-template-rows: 36.5em 56em 48em;
 	margin: 0;
 	padding: 0;
 	grid-template-areas: "popular_cards_grid"
@@ -279,8 +279,12 @@ a{
 
 .popular__title{
 	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
+	justify-content: space-around;
+	margin: 30px 0;
+}
+
+.popular__title h2{
+	margin: 0;
 }
 
 .popular__title i{
