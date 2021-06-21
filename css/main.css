@@ -238,7 +238,7 @@ a{
 	font-family: 'Raleway', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 36.5em 56em 48em;
+	grid-template-rows: 36.5em 86em 48em;
 	margin: 0;
 	padding: 0;
 	grid-template-areas: "popular_cards_grid"
@@ -258,8 +258,23 @@ a{
 	-o-border-radius: 20px;
 }
 
-.cardsgrid h2, .cardsgrid p{
+.cardsgrid h2{
 	margin-left: 20px;
+	font-weight: 700;
+}
+
+.cardsgrid p{
+	margin-left: 20px;
+}
+
+.cardsgrid p span{
+	font-weight: 800;
+}
+
+.cardsdesc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .blue__star{
@@ -279,8 +294,8 @@ a{
 
 .popular__title{
 	display: flex;
-	justify-content: space-around;
-	margin: 30px 0;
+	justify-content: space-between;
+	margin: 30px 20px 30px 20px;
 }
 
 .popular__title h2{
@@ -319,17 +334,58 @@ a{
 	-o-border-radius: 20px 0 0 20px;
 }
 
-.cardsdesc{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
 
 /*****ACCOMMODATE CARDS*****/
 
 .accommodate{
 	background-color: #FFF;
 	grid-area: accomodate_cards_grid;
+}
+
+.accommodategrid__cards{
+	display: block;
+}
+
+.accommodategrid__cards h2{
+	font-size: 1em;
+	margin: 0 0 0 20px;
+}
+
+.accommodategrid__cards p{
+	font-size: 0.85em;
+	margin: 0 0 5px 20px;
+}
+
+.accommodatecards__desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.accommodatecards__desc .stars{
+	margin-bottom: 5px;
+}
+
+.accommodategrid__img{
+	border: solid 1px transparent;
+	border-radius: 20px 20px 0 0;
+	margin: 5px;
+	min-width: 98%;
+	min-height: 115px;
+	max-height: 115px;
+	background-size: 100% 100%;
+	object-fit: cover;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	-ms-border-radius: 20px 20px 0 0;
+	-o-border-radius: 20px 20px 0 0;
+}
+
+.accommodate__more{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	font-size:  1.1em;
+	font-weight: 700;
 }
 
 /*****ACTIVITY CARDS*****/
@@ -344,7 +400,7 @@ a{
 	display: inline;
 	margin: 0;
 	padding: 0;
-	font-size: 0.5em;
+	font-size: 0.8em;
 }
 
 .stars{
