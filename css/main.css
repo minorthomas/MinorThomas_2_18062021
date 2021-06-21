@@ -238,7 +238,7 @@ a{
 	font-family: 'Raleway', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 36.5em 86em 48em;
+	grid-template-rows: 0.9fr 2fr 2fr;
 	margin: 0;
 	padding: 0;
 	grid-template-areas: "popular_cards_grid"
@@ -259,8 +259,8 @@ a{
 }
 
 .cardsgrid h2{
-	margin-left: 20px;
 	font-weight: 700;
+	margin-left: 20px;
 }
 
 .cardsgrid p{
@@ -271,18 +271,24 @@ a{
 	font-weight: 800;
 }
 
-.cardsdesc{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
 .blue__star{
 	color: #0065FC;
 }
 
 .grey__star{
 	color: #cacaca;
+}
+
+/*****STARS*****/
+.stars i{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+
+.stars{
+	margin-left: 20px;
 }
 
 /*****POPULAR CARDS*****/
@@ -313,6 +319,7 @@ a{
 
 .populargrid__cards h2{
 	font-size: 1em;
+	margin: 0 0 0 20px;
 }
 
 .populargrid__cards p{
@@ -332,6 +339,12 @@ a{
 	-moz-border-radius: 20px 0 0 20px;
 	-ms-border-radius: 20px 0 0 20px;
 	-o-border-radius: 20px 0 0 20px;
+}
+
+.popular__cardsdesc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 
@@ -373,7 +386,6 @@ a{
 	min-width: 98%;
 	min-height: 115px;
 	max-height: 115px;
-	background-size: 100% 100%;
 	object-fit: cover;
 	-webkit-border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
@@ -395,14 +407,56 @@ a{
 	grid-area: activity_cards_grid;
 }
 
-/*****STARS*****/
-.stars i{
-	display: inline;
-	margin: 0;
-	padding: 0;
-	font-size: 0.8em;
+.activitygrid__cards{
+	display: block;
 }
 
-.stars{
-	margin-left: 20px;
+.activitygrid__cards h2{
+	font-size: 1em;
+	margin: 18px;
+}
+
+.activity__title{
+	margin: 35px 0 0 0;
+}
+
+.activitygrid__img{
+	border: solid 0px transparent;
+	border-radius: 20px 20px 0 0;
+	width: 100%;
+	max-height: 130px;
+	object-fit: cover;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	-ms-border-radius: 20px 20px 0 0;
+	-o-border-radius: 20px 20px 0 0;
+}
+
+/*****ACTIVITY CARDS*****/
+
+footer{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	justify-content: space-around;
+	background-color: #F2F2F2;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+footer a{
+	margin-top: 10px;
+}
+
+.footerbar__about{
+	margin-top: 25px;
+}
+
+.footerbar__assist{
+	margin-bottom: 50px;
 }
