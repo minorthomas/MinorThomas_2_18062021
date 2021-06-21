@@ -8,8 +8,8 @@ body{
 }
 
 .container{
-	padding: 0 20px;
-	margin: 0;
+	padding: 0;
+	margin: 0 20px;
 }
 
 a{
@@ -232,12 +232,13 @@ a{
 	margin-top: 20px;
 }
 
-/*****POPULAR CARDS*****/
+/*****CARDS*****/
 
 .cardsgrid{
+	font-family: 'Raleway', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 35em 56em 48em;
 	margin: 0;
 	padding: 0;
 	grid-template-areas: "popular_cards_grid"
@@ -246,15 +247,104 @@ a{
 }
 
 .cards{
-	background-color: #F2F2F2;
+	background-color: #FFF;
+	border: solid 1px #F2F2F2;
+	border-radius: 20px;
+	box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.15);
+	margin: 10px 20px 10px 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
 }
 
+.cardsgrid h2{
+	margin: 20px 0 0 20px;
+}
+
+.cardsgrid p{
+	margin: 5px 0 0 20px;
+}
+
+.stars{
+	margin-top: 35px;
+}
+
+.blue__star{
+	color: #0065FC;
+}
+
+.grey__star{
+	color: #cacaca;
+}
+
+/*****POPULAR CARDS*****/
+
 .popular{
+	background-color: #F2F2F2;
 	grid-area: popular_cards_grid;
 }
+
+.popular__title{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.popular__title i{
+	align-self: center;
+	font-size: 1.3em;
+}
+
+.populargrid__cards{
+	display: flex;
+}
+
+.populargrid__cards h2{
+	font-size: 1em;
+}
+
+.populargrid__cards p{
+	font-size: 0.85em;
+}
+
+.populargrid_img{
+	border: solid 1px transparent;
+	border-radius: 20px 0 0 20px;
+	margin: 5px;
+	min-width: 125px;
+	min-height: 135px;
+	max-width: 125px;
+	max-height: 135px;
+	object-fit: cover;
+	-webkit-border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+	-ms-border-radius: 20px 0 0 20px;
+	-o-border-radius: 20px 0 0 20px;
+}
+
+/*****ACCOMMODATE CARDS*****/
+
 .accommodate{
+	background-color: #FFF;
 	grid-area: accomodate_cards_grid;
 }
+
+/*****ACTIVITY CARDS*****/
+
 .activity{
+	background-color: #FFF;
 	grid-area: activity_cards_grid;
+}
+
+/*****STARS*****/
+.stars i{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 0.5em;
+}
+
+.stars{
+	margin-left: 20px;
 }
