@@ -1,71 +1,62 @@
-@media only screen and (min-width: 1260px) {
-	/*****NAVBAR*****/
+@media only screen and (min-width: 1200px) {
 
+	.container{
+		padding: 0;
+		margin: 0 40px;
+	}
+
+	/*****NAVBAR*****/
 	.navbar{
 		display: grid;
 		grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
-		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
+		grid-template-areas: "navbar_logo . navbar_housing navbar_activity navbar_signup";
 	}
 
 	/*****FILTER BAR*****/
 
-	.filterbar__nav{
+	.filter_nav{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		margin-top: 20px;
 	}
 
-	.filterbar__button{
+	.filter_button{
 		margin-left: 25px;
 	}
 
 	/*****CARDS*****/
 
-	.cardsgrid{
-		font-family: 'Raleway', sans-serif;
+	.hosting{
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		grid-template-rows: 37em 1.2fr;
 		margin: 0;
-		padding: 0;
-		grid-template-areas: "accomodate_cards_grid popular_cards_grid"
-							 "activity_cards_grid activity_cards_grid";
 	}
 
-	/*****ACCOMMODATE CARDS*****/
+	/*****HOUSING*****/
+	
 
-	.accommodategrid{
-		font-family: 'Raleway', sans-serif;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		margin: 0;
-		padding: 0;
-	}
 
-	.accommodate{
-		border: solid 1px transparent;
-		border-radius: 20px;
-		margin: 20px 20px 0 20px;
-		background-color: #F2F2F2;
-	}
-
-	/*****ACTIVITY CARDS*****/
+	/*****POPULAR*****/
 
 	.popular{
 		border: solid 1px transparent;
 		border-radius: 20px;
-		margin: 20px 20px 0 0;
-		background-color: #F2F2F2;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+		margin-right: 20px;
+}
+
+	.popular_grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 4em 11em 11em 11em;
 	}
 
-	/*****ACTIVITY CARDS*****/
-
-	
-	.activity__title{
-		margin: 45px 20px 5px 20px;
+	.popular_card_img{
+		height: 500px;
 	}
-
 }

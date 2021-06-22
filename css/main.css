@@ -40,7 +40,7 @@ a{
 
 .navbar_button_logo{
 	grid-area: navbar_logo;
-	padding-left: 25px;
+	padding-left: 0;
 	padding-top: 10px;
 }
 .navbar_button_signup{
@@ -48,7 +48,7 @@ a{
 	justify-self: end;
 	font-weight: 800;
 	color: #0065FC;
-	padding-right: 25px;
+	padding-right: 0;
 	padding-top: 10px;
 }
 .navbar_button_housing{
@@ -281,7 +281,7 @@ a{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin: 0 20px 10px 20px;
+	margin: 0 0 10px 0;
 }
 
 .popular_title i{
@@ -295,8 +295,7 @@ a{
 
 .popular_card{
 	display: flex;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .popular_card h2{
@@ -341,7 +340,7 @@ a{
 .housing_title{
 	display: flex;
 	align-items: flex-end;
-	margin: 0 20px 10px 20px;
+	margin: 0 0 10px 0;
 }
 
 .housing_title h2{
@@ -353,8 +352,21 @@ a{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 4em repeat(6, 1fr) 2em;
+	grid-template-areas: "housing_area_title"
+						 "housing_area_1" 
+						 "housing_area_2"
+						 "housing_area_3" 
+						 "housing_area_4"
+						 "housing_area_5"
+						 "housing_area_6"
+						 "housing_area_showmore";
 	row-gap: 0.7em;
+	column-gap: 0.7em;
 	padding-bottom: 30px;
+}
+
+.housing_card{
+	margin: 0;
 }
 
 .housing_card h2{
@@ -400,6 +412,31 @@ a{
 	margin-left: 20px;
 }
 
+.housing_area_title{
+	grid-area: housing_area_title;
+}
+.housing_area_1{
+	grid-area: housing_area_1;
+}
+.housing_area_2{
+	grid-area: housing_area_2;
+}
+.housing_area_3{
+	grid-area: housing_area_3;
+}
+.housing_area_4{
+	grid-area: housing_area_4;
+}
+.housing_area_5{
+	grid-area: housing_area_5;
+}
+.housing_area_6{
+	grid-area: housing_area_6;
+}
+.housing_showmore{
+	grid-area: housing_area_showmore;
+}
+
 /*****ACTIVITY*****/
 
 .activity_grid{
@@ -407,13 +444,18 @@ a{
 	grid-template-columns: 1fr;
 	grid-template-rows: 4em repeat(6, 1fr);
 	row-gap: 0.7em;
+	column-gap: 0.7em;
 	padding-bottom: 30px;
 }
 
 .activity_title{
 	display: flex;
 	align-items: flex-end;
-	margin: 0 20px 10px 20px;
+	margin: 0 0 10px 0;
+}
+
+.activity_card{
+	margin: 0;
 }
 
 .activity_card_title{
@@ -432,6 +474,28 @@ a{
 	-ms-border-radius: 15px 15px 0 0;
 	-o-border-radius: 15px 15px 0 0;
 	object-position: 0% 40%;
+}
+
+.activity_title{
+	grid-area: activity_area_title;
+}
+.activity_area_1{
+	grid-area: activity_area_1;
+}
+.activity_area_2{
+	grid-area: activity_area_2;
+}
+.activity_area_3{
+	grid-area: activity_area_3;
+}
+.activity_area_4{
+	grid-area: activity_area_4;
+}
+.activity_area_5{
+	grid-area: activity_area_5;
+}
+.activity_area_6{
+	grid-area: activity_area_6;
 }
 
 /*****FOOTER*****/
