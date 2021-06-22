@@ -3,6 +3,7 @@
 }
 
 body{
+	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -46,7 +47,6 @@ a{
 .signup{
 	grid-area: navbar__button--signup;
 	justify-self: end;
-	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	color: #0065FC;
 	padding-right: 25px;
@@ -54,21 +54,18 @@ a{
 }
 .heberg{
 	grid-area: navbar__button--heberg;
-	font-family: 'Raleway', sans-serif;
 	border-bottom: solid 3px #0065FC;
 	color: #0065FC;
 	font-weight: 600;
 }
 .activ{
 	grid-area: navbar__button--activity;
-	font-family: 'Raleway', sans-serif;
 	border-bottom: solid 3px #F2F2F2;
 }
 
 /*****RESEARCHBAR*****/
 
 .researchbar h1{
-	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	font-size: 1.1em;
 	margin-top: 25px;
@@ -76,7 +73,6 @@ a{
 }
 
 .researchbar h2{
-	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	font-size: 0.9em;
 	margin: 0;
@@ -101,14 +97,12 @@ a{
 }
 
 .researchbar__example{
-	font-family: 'Raleway', sans-serif;
 	border-top: solid 1px #F2F2F2;
 	border-bottom: solid 1px #F2F2F2;
 	border-left: none;
 	border-right: none;
 	width: 270px;
 	padding: 0 0 0 25px;
-	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	outline: none;
 }
@@ -131,14 +125,12 @@ a{
 /*****FILTERBAR*****/
 
 .filterbar h2{
-	font-family: 'Raleway', sans-serif;
 	font-size: 0.95em;
 	font-weight: 800;
 	margin: 20px 0 0 0;
 }
 
 .filterbar__link{
-	font-family: 'Raleway', sans-serif;
 	padding: 5px 15px 10px 5px;
 	font-weight: 800;
 	font-size: 0.9em;
@@ -146,7 +138,7 @@ a{
 
 .filterbar__nav{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -226,7 +218,6 @@ a{
 }
 
 .filterbar__info p{
-	font-family: 'Raleway', sans-serif;
 	display: inline-block;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -234,28 +225,22 @@ a{
 
 /*****CARDS*****/
 
-.cardsgrid{
-	font-family: 'Raleway', sans-serif;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.9fr 2fr 2fr;
+.hosting{
+	display: flex;
+	flex-direction: column-reverse;
 	margin: 0;
-	padding: 0;
-	grid-template-areas: "popular_cards_grid"
-						 "accomodate_cards_grid"
-						 "activity_cards_grid";
 }
 
 .cards{
 	background-color: #FFF;
 	border: solid 1px #F2F2F2;
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.15);
 	margin: 10px 20px 10px 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
 }
 
 .cardsgrid h2{
@@ -280,6 +265,7 @@ a{
 }
 
 /*****STARS*****/
+
 .stars i{
 	display: inline;
 	margin: 0;
@@ -295,7 +281,6 @@ a{
 
 .popular{
 		background-color: #F2F2F2;
-		grid-area: popular_cards_grid;
 }
 
 .popular__title{
@@ -327,9 +312,8 @@ a{
 }
 
 .populargrid_img{
-	border: solid 1px transparent;
+	border: solid 6px transparent;
 	border-radius: 20px 0 0 20px;
-	margin: 5px;
 	min-width: 125px;
 	min-height: 135px;
 	max-width: 125px;
@@ -350,42 +334,43 @@ a{
 
 /*****ACCOMMODATE CARDS*****/
 
-.accommodate{
+.housing{
 	background-color: #FFF;
-	grid-area: accomodate_cards_grid;
 }
 
-.accommodategrid__cards{
+.housing_title{
+	margin: 30px 20px;
+}
+
+.housing_card{
 	display: block;
 }
 
-.accommodategrid__cards h2{
+.housing_card h2{
 	font-size: 1em;
 	margin: 0 0 0 20px;
 }
 
-.accommodategrid__cards p{
+.housing_card p{
 	font-size: 0.85em;
 	margin: 0 0 5px 20px;
 }
 
-.accommodatecards__desc{
+.housing_card_desc{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-.accommodatecards__desc .stars{
+.housing_card_desc .stars{
 	margin-bottom: 5px;
 }
 
-.accommodategrid__img{
-	border: solid 1px transparent;
+.housing_card_img{
+	border: solid 6px transparent;
 	border-radius: 20px 20px 0 0;
-	margin: 5px;
-	min-width: 98%;
-	min-height: 115px;
-	max-height: 115px;
+	width: 100%;
+	height: 135px;
 	object-fit: cover;
 	-webkit-border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
@@ -393,7 +378,7 @@ a{
 	-o-border-radius: 20px 20px 0 0;
 }
 
-.accommodate__more{
+.housing_showmore{
 	display: inline-block;
 	margin: 20px 0 0 20px;
 	font-size:  1.1em;
@@ -402,10 +387,13 @@ a{
 
 /*****ACTIVITY CARDS*****/
 
-.activity{
+/*.activity{
+	display: grid;
+	row-gap: 1rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
 	background-color: #FFF;
-	grid-area: activity_cards_grid;
-}
+}*/
 
 .activitygrid__cards{
 	display: block;
@@ -417,7 +405,7 @@ a{
 }
 
 .activity__title{
-	margin: 35px 0 0 0;
+	margin: 30px 20px 0 20px;
 }
 
 .activitygrid__img{
@@ -436,7 +424,6 @@ a{
 /*****FOOTER*****/
 
 footer{
-	font-family: 'Raleway', sans-serif;
 	display: flex;
 	flex-direction: column;
 	height: 500px;
