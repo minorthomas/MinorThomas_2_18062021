@@ -1,4 +1,6 @@
 @media only screen and (min-width: 600px) {
+	/*****NAVBAR*****/
+
 	.navbar{
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
@@ -23,10 +25,9 @@
 	/******CARDS******/
 
 	.cardsgrid{
-		font-family: 'Raleway', sans-serif;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.8fr 1fr 1fr;
+		grid-template-rows: 0.7fr 1fr 1fr;
 		margin: 0;
 		padding: 0;
 		grid-template-areas: "popular_cards_grid"
@@ -37,7 +38,6 @@
 	/*****ACCOMMODATE CARDS*****/
 
 	.accommodategrid{
-		font-family: 'Raleway', sans-serif;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
@@ -48,11 +48,15 @@
 	/*****ACTIVITY CARDS*****/
 
 	.activitygrid{
-		font-family: 'Raleway', sans-serif;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		margin: 0;
 		padding: 0;
+		grid-template-areas: "activity__vieuxport activity__fortpomegues"
+							 "activity__ilesfrioul activity__parcnational"
+							 "activity__notredame activity__parclongchamp";
 	}
+
+
 }
