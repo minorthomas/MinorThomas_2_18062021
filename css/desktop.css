@@ -1,10 +1,4 @@
 @media only screen and (min-width: 1200px) {
-
-	.container{
-		padding: 0;
-		margin: 0 40px;
-	}
-
 	/*****NAVBAR*****/
 	.navbar{
 		display: grid;
@@ -31,12 +25,26 @@
 	.hosting{
 		display: grid;
 		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 1fr;
 		margin: 0;
 	}
 
 	/*****HOUSING*****/
-	
 
+	.housing{
+		background-color: #F2F2F2;
+		border: solid 1px transparent;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+		margin: 0 20px;
+	}
+
+	.housing_grid{
+		padding-bottom: 12px;
+	}
 
 	/*****POPULAR*****/
 
@@ -47,16 +55,10 @@
 		-moz-border-radius: 20px;
 		-ms-border-radius: 20px;
 		-o-border-radius: 20px;
-		margin-right: 20px;
-}
-
-	.popular_grid{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 4em 11em 11em 11em;
+		margin: 0 20px;
 	}
 
-	.popular_card_img{
-		height: 500px;
+	.popular_grid{
+		padding-bottom: 12px;
 	}
 }

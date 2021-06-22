@@ -88,4 +88,32 @@
 							 "activity_area_1 activity_area_2 activity_area_3"
 							 "activity_area_4 activity_area_5 activity_area_6";
 	}
+
+	/*****POPULAR*****/
+
+	footer{
+		display: flex;
+		flex-direction: row;
+		height: 200px;
+		justify-content: flex-start;
+		background-color: #F2F2F2;
+	}
+
+	section{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	footer a{
+		margin-top: 0;
+	}
+	
+	.footer_about{
+		margin-top: 0;
+	}
+	
+	.footer_assist{
+		margin-bottom: 0;
+	}
 }
