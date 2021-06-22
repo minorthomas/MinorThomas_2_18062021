@@ -19,13 +19,40 @@
 	.signup{
 		justify-self: center;
 	}
-}
 
-@media only screen and (min-width: 965px) {
-	.navbar{
+	/******CARDS******/
+
+	.cardsgrid{
+		font-family: 'Raleway', sans-serif;
 		display: grid;
-		grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.8fr 1fr 1fr;
+		margin: 0;
+		padding: 0;
+		grid-template-areas: "popular_cards_grid"
+							 "accomodate_cards_grid"
+							 "activity_cards_grid";
+	}
+
+	/*****ACCOMMODATE CARDS*****/
+
+	.accommodategrid{
+		font-family: 'Raleway', sans-serif;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: 0;
+		padding: 0;
+	}
+
+	/*****ACTIVITY CARDS*****/
+
+	.activitygrid{
+		font-family: 'Raleway', sans-serif;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: 0;
+		padding: 0;
 	}
 }

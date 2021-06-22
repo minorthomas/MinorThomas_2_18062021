@@ -1,4 +1,4 @@
-@media only screen and (min-width: 965px) {
+@media only screen and (min-width: 1100px) {
 	.navbar{
 		display: grid;
 		grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
