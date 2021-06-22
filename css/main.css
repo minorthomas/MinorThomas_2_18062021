@@ -243,27 +243,6 @@ a{
 	-o-border-radius: 15px;
 }
 
-.cardsgrid h2{
-	font-weight: 700;
-	margin-left: 20px;
-}
-
-.cardsgrid p{
-	margin-left: 20px;
-}
-
-.cardsgrid p span{
-	font-weight: 800;
-}
-
-.blue__star{
-	color: #0065FC;
-}
-
-.grey__star{
-	color: #cacaca;
-}
-
 /*****STARS*****/
 
 .stars i{
@@ -274,150 +253,185 @@ a{
 }
 
 .stars{
-	margin-left: 20px;
+	margin: 0 0 10px 0;
 }
 
-/*****POPULAR CARDS*****/
+.blue_star{
+	color: #0065FC;
+}
+
+.grey_star{
+	color: #cacaca;
+}
+/*****POPULAR*****/
 
 .popular{
-		background-color: #F2F2F2;
+	background-color: #F2F2F2;
+	margin-top: 20px;
 }
 
-.popular__title{
+.popular_grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4em repeat(3, 1fr);
+	row-gap: 0.7em;
+	padding-bottom: 30px;
+}
+
+.popular_title{
 	display: flex;
 	justify-content: space-between;
-	margin: 30px 20px 30px 20px;
+	align-items: flex-end;
+	margin: 0 20px 10px 20px;
 }
 
-.popular__title h2{
-	margin: 0;
-}
-
-.popular__title i{
-	align-self: center;
+.popular_title i{
 	font-size: 1.3em;
 }
 
-.populargrid__cards{
+.popular_title h2{
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.popular_card{
 	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-.populargrid__cards h2{
+.popular_card h2{
 	font-size: 1em;
-	margin: 0 0 0 20px;
 }
 
-.populargrid__cards p{
+.popular_card p{
 	font-size: 0.85em;
 }
 
-.populargrid_img{
+.popular_card_img{
 	border: solid 6px transparent;
-	border-radius: 20px 0 0 20px;
-	min-width: 125px;
+	border-radius: 15px 0 0 15px;
+	min-width: 130px;
 	min-height: 135px;
-	max-width: 125px;
+	max-width: 130px;
 	max-height: 135px;
 	object-fit: cover;
-	-webkit-border-radius: 20px 0 0 20px;
-	-moz-border-radius: 20px 0 0 20px;
-	-ms-border-radius: 20px 0 0 20px;
-	-o-border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	-ms-border-radius: 15px 0 0 15px;
+	-o-border-radius: 15px 0 0 15px;
 }
 
-.popular__cardsdesc{
+.popular_card_desc{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: 0 20px 0 15px;
 }
 
+.popular_card_desc_title p{
+	margin: 5px 0 0 0;
+}
 
-/*****ACCOMMODATE CARDS*****/
+/*****HOUSING*****/
 
 .housing{
 	background-color: #FFF;
 }
 
 .housing_title{
-	margin: 30px 20px;
+	display: flex;
+	align-items: flex-end;
+	margin: 0 20px 10px 20px;
 }
 
-.housing_card{
-	display: block;
+.housing_title h2{
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.housing_grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4em repeat(6, 1fr) 2em;
+	row-gap: 0.7em;
+	padding-bottom: 30px;
 }
 
 .housing_card h2{
 	font-size: 1em;
-	margin: 0 0 0 20px;
+	margin: 0;
 }
 
 .housing_card p{
 	font-size: 0.85em;
-	margin: 0 0 5px 20px;
+	margin: 0;
 }
 
 .housing_card_desc{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin-left: 20px;
 }
 
-.housing_card_desc .stars{
+.housing_card_desc_title{
 	margin-bottom: 5px;
 }
 
 .housing_card_img{
 	border: solid 6px transparent;
-	border-radius: 20px 20px 0 0;
+	border-radius: 15px 15px 0 0;
 	width: 100%;
 	height: 135px;
 	object-fit: cover;
-	-webkit-border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	-ms-border-radius: 20px 20px 0 0;
-	-o-border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+	-ms-border-radius: 15px 15px 0 0;
+	-o-border-radius: 15px 15px 0 0;
 }
 
 .housing_showmore{
-	display: inline-block;
-	margin: 20px 0 0 20px;
-	font-size:  1.1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-size:  1em;
 	font-weight: 700;
+	margin-left: 20px;
 }
 
-/*****ACTIVITY CARDS*****/
+/*****ACTIVITY*****/
 
-/*.activity{
+.activity_grid{
 	display: grid;
-	row-gap: 1rem;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(6, 1fr);
-	background-color: #FFF;
-}*/
-
-.activitygrid__cards{
-	display: block;
+	grid-template-rows: 4em repeat(6, 1fr);
+	row-gap: 0.7em;
+	padding-bottom: 30px;
 }
 
-.activitygrid__cards h2{
+.activity_title{
+	display: flex;
+	align-items: flex-end;
+	margin: 0 20px 10px 20px;
+}
+
+.activity_card_title{
+	margin: 18px 0 18px 15px;
 	font-size: 1em;
-	margin: 18px;
 }
 
-.activity__title{
-	margin: 30px 20px 0 20px;
-}
-
-.activitygrid__img{
+.activity_card_img{
 	border: solid 0px transparent;
-	border-radius: 20px 20px 0 0;
+	border-radius: 15px 15px 0 0;
 	width: 100%;
 	max-height: 130px;
 	object-fit: cover;
-	-webkit-border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	-ms-border-radius: 20px 20px 0 0;
-	-o-border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+	-ms-border-radius: 15px 15px 0 0;
+	-o-border-radius: 15px 15px 0 0;
 	object-position: 0% 40%;
 }
 
