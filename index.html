@@ -17,51 +17,51 @@
 <body>
     <header>
         <nav class="navbar">
-            <img src="assets/img/logo/Reservia.svg" alt="logo reservia" class="navbar__button logo" id="navbar__button--logo">
-            <a href="#accomodate_cards_grid" class="navbar__button heberg" id="navbar__button--heberg">Hébergements</a>
-            <a href="#activity_cards_grid" class="navbar__button activ" id="navbar__button--activity">Activités</a>
-            <a href="#" class="navbar__button signup" id="navbar__button--signup">S'inscrire</a>
+            <img src="assets/img/logo/Reservia.svg" alt="Logo réservia" class="navbar_button navbar_button_logo" id="navbar_logo">
+            <a href="#anchor_housing" class="navbar_button navbar_button_housing" id="navbar_housing">Hébergements</a>
+            <a href="#anchor_activity" class="navbar_button navbar_button_activity" id="navbar_activity">Activités</a>
+            <a href="#" class="navbar_button navbar_button_signup" id="navbar_signup">S'inscrire</a>
         </nav>
     </header>
     <main>
-        <div class="researchbar container">
+        <div class="search container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou en pleine nature</h2>
-            <div class="researchbar__search">
-                <i class="fas fa-map-marker-alt" id="research__position__icon"></i>
-                <input type="text"  placeholder="Marseille, France" class="researchbar__example">
-                <a href="#" class="researchbar__button"><i class="fas fa-search" id="research__search__icon"></i></a>
+            <div class="search_textzone">
+                <i class="fas fa-map-marker-alt" id="search_position_icon"></i>
+                <input type="text" placeholder="Marseille, France" class="search_example">
+                <a href="#" class="search_button"><i class="fas fa-search" id="search_searching_icon"></i></a>
             </div>
         </div>
-        <div class="filterbar container">
-            <nav class="filterbar__nav">
+        <div class="filter container">
+            <nav class="filter_nav">
                 <h2>Filtres</h2>
-                <div class="filterbar__buttons">
-                    <div class="filterbar__button economy">
+                <div class="filter_buttons">
+                    <div class="filter_button economy">
                         <i class="fas fa-money-bill-wave" id="filter_economy_icon"></i>
-                        <a class="filterbar__link" href="#">Économique</a>
+                        <a class="filter_link" href="#">Économique</a>
                     </div>
-                    <div class="filterbar__button family">
+                    <div class="filter_button family">
                         <i class="fas fa-child" id="filter_family_icon"></i>
-                        <a class="filterbar__link" href="#">Familial</a>
+                        <a class="filter_link" href="#">Familial</a>
                     </div>
-                    <div class="filterbar__button romantic">
+                    <div class="filter_button romantic">
                         <i class="fas fa-heart" id="filter_heart_icon"></i>
-                        <a class="filterbar__link" href="#">Romantique</a>
+                        <a class="filter_link" href="#">Romantique</a>
                     </div>
-                    <div class="filterbar__button petsallowed">
+                    <div class="filter_button petsallowed">
                         <i class="fas fa-dog" id="filter_pets_icon"></i>
-                        <a class="filterbar__link" href="#">Animaux autorisés</a>
+                        <a class="filter_link" href="#">Animaux autorisés</a>
                     </div>
                 </div>
             </nav>
-            <div class="filterbar__info">
-                <i class="fas fa-info" id="filterbar_info_icon"></i>
+            <div class="filter_info">
+                <i class="fas fa-info" id="filter_info_icon"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>        
         <div class="hosting">
-            <section class="housing">
+            <section class="housing anchor_housing">
                 <div class="housing_grid">                
                     <h2 class="housing_title">Hébergements à Marseille</h2>
                     <a href="#" title="Auberge la Cannebière" class="housing_card cards" id="housing_card_1">
@@ -220,7 +220,7 @@
                 </div>
             </aside>
         </div>
-        <section class="activity">
+        <section class="activity" id="anchor_activity">
             <div class="activity_grid">
                 <h2 class="activity_title">Activités à Marseille</h2>
                 <a href="#" title="Vieux port" class="activity_card cards" id="activity_card_1">
@@ -251,18 +251,18 @@
         </section>
     </main>
     <footer>
-        <section class="footerbar__about container">
+        <section class="footer_about container">
             <h3>A propos</h3>
             <a href="#">Fonctionnement du site</a>
             <a href="#">Conditions générales de vente</a>
             <a href="#">Données et confidentialité</a>
         </section>
-        <section class="footerbar__heberg container">
+        <section class="footer_heberg container">
             <h3>Nos hébergements</h3>
             <a href="#">Charte qualité</a>
             <a href="#">Soumettre votre hôtel</a>
         </section>
-        <section class="footerbar__assist container">
+        <section class="footer_assist container">
             <h3>Assistance</h3>
             <a href="#">Centre d'aide</a>
             <a href="#">Nous contacter</a>

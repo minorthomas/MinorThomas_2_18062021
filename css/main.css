@@ -23,12 +23,12 @@ a{
 .navbar{
 	display: grid;
 	grid-auto-columns: 1fr 1fr;
-	grid-template-rows: 1.0fr 0.7fr;
-	grid-template-areas: "navbar__button--logo navbar__button--signup"
-						 "navbar__button--heberg navbar__button--activity";
+	grid-template-rows: 4em 4em;
+	grid-template-areas: "navbar_logo navbar_signup"
+						 "navbar_housing navbar_activity";
 }
 
-.navbar__button{
+.navbar_button{
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
@@ -38,52 +38,62 @@ a{
 	border-top: solid 3px transparent;
 }
 
-
-.logo{
-	grid-area: navbar__button--logo;
+.navbar_button_logo{
+	grid-area: navbar_logo;
 	padding-left: 25px;
 	padding-top: 10px;
 }
-.signup{
-	grid-area: navbar__button--signup;
+.navbar_button_signup{
+	grid-area: navbar_signup;
 	justify-self: end;
 	font-weight: 800;
 	color: #0065FC;
 	padding-right: 25px;
 	padding-top: 10px;
 }
-.heberg{
-	grid-area: navbar__button--heberg;
+.navbar_button_housing{
+	grid-area: navbar_housing;
 	border-bottom: solid 3px #0065FC;
 	color: #0065FC;
 	font-weight: 600;
 }
-.activ{
-	grid-area: navbar__button--activity;
+.navbar_button_activity{
+	grid-area: navbar_activity;
 	border-bottom: solid 3px #F2F2F2;
 }
 
-/*****RESEARCHBAR*****/
+/*****SEARCH*****/
 
-.researchbar h1{
+.search h1{
 	font-weight: 800;
 	font-size: 1.1em;
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
 
-.researchbar h2{
+.search h2{
 	font-weight: 500;
 	font-size: 0.9em;
 	margin: 0;
 }
 
-.researchbar__search{
+.search_textzone{
 	display: flex;
 	margin-top: 25px;
 }
 
-#research__position__icon{
+.search_example{
+	border-top: solid 1px #F2F2F2;
+	border-bottom: solid 1px #F2F2F2;
+	border-left: none;
+	border-right: none;
+	width: 270px;
+	padding: 0 0 0 25px;
+	font-weight: bold;
+	outline: none;
+}
+
+#search_position_icon{
 	align-content: center;
 	background-color: #F2F2F2;
 	padding: 13px 13px 13px 13px;
@@ -96,18 +106,7 @@ a{
 	-o-border-radius: 12px 0px 0px 12px;
 }
 
-.researchbar__example{
-	border-top: solid 1px #F2F2F2;
-	border-bottom: solid 1px #F2F2F2;
-	border-left: none;
-	border-right: none;
-	width: 270px;
-	padding: 0 0 0 25px;
-	font-weight: bold;
-	outline: none;
-}
-
-#research__search__icon{
+#search_searching_icon{
 	display: inline-block;
 	position: absolute;
 	left: 315px;
@@ -124,26 +123,26 @@ a{
 
 /*****FILTERBAR*****/
 
-.filterbar h2{
+.filter h2{
 	font-size: 0.95em;
 	font-weight: 800;
 	margin: 20px 0 0 0;
 }
 
-.filterbar__link{
+.filter_link{
 	padding: 5px 15px 10px 5px;
 	font-weight: 800;
 	font-size: 0.9em;
 }
 
-.filterbar__nav{
+.filter_nav{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.filterbar__button{
+.filter_button{
 	display: inline-block;
 	border: solid 2px #F2F2F2;
 	margin-top: 8px;
@@ -202,7 +201,7 @@ a{
 	-o-border-radius: 20px;
 }
 
-#filterbar_info_icon{
+#filter_info_icon{
 	display: block;
 	position: absolute;
 	font-size: 0.8em;
@@ -212,12 +211,12 @@ a{
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
-	padding: 6px 9px 6px 9px;
+	padding: 6px 10px 6px 10px;
 	color: #0065FC;
 	margin-top: 17px;
 }
 
-.filterbar__info p{
+.filter_info p{
 	display: inline-block;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -455,10 +454,10 @@ footer a{
 	margin-top: 10px;
 }
 
-.footerbar__about{
+.footer_about{
 	margin-top: 25px;
 }
 
-.footerbar__assist{
+.footer_assist{
 	margin-bottom: 50px;
 }

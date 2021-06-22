@@ -5,58 +5,20 @@
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
-		grid-template-areas: "navbar__button--logo . navbar__button--heberg navbar__button--activity navbar__button--signup";
+		grid-template-areas: "navbar_logo . navbar_housing navbar_activity navbar_signup";
 	}
 
-	.navbar__button{
+	.navbar_button{
 		border-top: solid 3px transparent;
 		border-bottom: none;
 		padding-top: 10px;
 	}
 
-	.heberg{
+	.navbar_button_housing{
 		border-top: solid 3px #0065FC;
 	}
 
-	.signup{
+	.navbar_button_signup{
 		justify-self: center;
 	}
-
-	/******CARDS******/
-
-	.cardsgrid{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 0.7fr 1fr 1fr;
-		margin: 0;
-		padding: 0;
-		grid-template-areas: "popular_cards_grid"
-							 "accomodate_cards_grid"
-							 "activity_cards_grid";
-	}
-
-	/*****ACCOMMODATE CARDS*****/
-
-	.accommodategrid{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		margin: 0;
-		padding: 0;
-	}
-
-	/*****ACTIVITY CARDS*****/
-
-	.activitygrid{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		margin: 0;
-		padding: 0;
-		grid-template-areas: "activity__vieuxport activity__fortpomegues"
-							 "activity__ilesfrioul activity__parcnational"
-							 "activity__notredame activity__parclongchamp";
-	}
-
-
 }
