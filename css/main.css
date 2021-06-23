@@ -52,6 +52,7 @@ a{
 	padding-right: 0;
 	padding-top: 10px;
 	margin-right: 20px;
+	transition: transform .2s;
 }
 .navbar_button_housing{
 	grid-area: navbar_housing;
@@ -108,19 +109,29 @@ a{
 	-o-border-radius: 12px 0px 0px 12px;
 }
 
+.search_button{
+	border: none;
+	background: none;
+	padding: 0;
+}
+
 #search_searching_icon{
 	display: inline-block;
-	position: absolute;
-	left: 315px;
+	position: relative;
+	left: -10px;
 	background-color: #0065FC;
 	color: #FFF;
-	padding: 15px 14px 15px 14px;
+	padding: 15px 15px 15px 15px;
 	font-size: 0.75em;
 	border-radius: 12px 12px 12px 12px;
 	-webkit-border-radius: 12px 12px 12px 12px;
 	-moz-border-radius: 12px 12px 12px 12px;
 	-ms-border-radius: 12px 12px 12px 12px;
 	-o-border-radius: 12px 12px 12px 12px;
+}
+
+.search_button_desktop{
+	display: none;
 }
 
 /*****FILTERBAR*****/
@@ -315,9 +326,8 @@ a{
 	border: solid 6px transparent;
 	border-radius: 15px 0 0 15px;
 	min-width: 130px;
-	min-height: 135px;
 	max-width: 130px;
-	max-height: 135px;
+	height: 100%;
 	object-fit: cover;
 	-webkit-border-radius: 15px 0 0 15px;
 	-moz-border-radius: 15px 0 0 15px;
@@ -330,6 +340,18 @@ a{
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 20px 0 15px;
+}
+
+.popular_grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4em repeat(3, 9em);
+	row-gap: 0.7em;
+	padding-bottom: 30px;
+	grid-template-areas: "popular_area_title"
+						 "popular_area_1"
+						 "popular_area_2"
+						 "popular_area_3";
 }
 
 .popular_card_desc_title p{
@@ -377,7 +399,7 @@ a{
 }
 
 .housing_card h2{
-	font-size: 1em;
+	font-size: 1.1em;
 	margin: 0;
 }
 
@@ -475,14 +497,15 @@ a{
 
 .activity_card_title{
 	margin: 18px 0 18px 15px;
-	font-size: 1em;
+	font-size: 1.1em;
+	font-weight: 800;
 }
 
 .activity_card_img{
 	border: solid 0px transparent;
 	border-radius: 15px 15px 0 0;
 	width: 100%;
-	max-height: 130px;
+	height: 130px;
 	object-fit: cover;
 	-webkit-border-radius: 15px 15px 0 0;
 	-moz-border-radius: 15px 15px 0 0;
@@ -541,7 +564,32 @@ footer a{
 	margin-bottom: 50px;
 }
 
-/*********ANIMATION**********/
+/*********HOVER**********/
+
+.navbar_button_activity:hover{
+	color: #0065FC;
+	border-bottom: solid 3px #0065FC;
+}
+
+#search_searching_icon:hover{
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+
+.navbar_button_signup:hover{
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-webkit-animation: text-shadow-drop-center 0.6s both;
+	animation: text-shadow-drop-center 0.6s both;
+}
+
+.filter_button:hover{
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
 
 .housing_card:hover{
 	transform: scale(1.02);
@@ -549,6 +597,7 @@ footer a{
 	-moz-transform: scale(1.02);
 	-ms-transform: scale(1.02);
 	-o-transform: scale(1.02);
+	color: #0065FC;
 }
 
 .popular_card:hover{
@@ -557,12 +606,37 @@ footer a{
 	-moz-transform: scale(1.02);
 	-ms-transform: scale(1.02);
 	-o-transform: scale(1.02);
+	color: #0065FC;
 }
 
 .activity_card:hover{
-	transform: scale(1.02);
-	-webkit-transform: scale(1.02);
-	-moz-transform: scale(1.02);
-	-ms-transform: scale(1.02);
-	-o-transform: scale(1.02);
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	color: #0065FC;
 }
+
+.housing_showmore:hover{
+	color: #0065FC;
+}
+
+/*****ANIMATIONS*****/
+
+@-webkit-keyframes text-shadow-drop-center {
+	0% {
+	  text-shadow: 0 0 0 rgba(0, 101, 252, 0);
+	}
+	100% {
+	  text-shadow: 0 0 18px rgba(0, 101, 252, 0.50);
+	}
+  }
+  @keyframes text-shadow-drop-center {
+	0% {
+	  text-shadow: 0 0 0 rgba(0, 101, 252, 0);
+	}
+	100% {
+	  text-shadow: 0 0 18px rgba(0, 101, 252, 0.50);
+	}
+  }
