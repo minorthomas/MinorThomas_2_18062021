@@ -164,6 +164,7 @@ a{
 	-moz-border-radius: 50px 50px 50px 50px;
 	-ms-border-radius: 50px 50px 50px 50px;
 	-o-border-radius: 50px 50px 50px 50px;
+	cursor: pointer;
 }
 
 #filter_economy_icon{
@@ -176,6 +177,7 @@ a{
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+	cursor: pointer;
 }
 
 #filter_family_icon{
@@ -188,6 +190,7 @@ a{
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+	cursor: pointer;
 }
 
 #filter_heart_icon{
@@ -200,6 +203,7 @@ a{
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+	cursor: pointer;
 }
 
 #filter_pets_icon{
@@ -212,6 +216,7 @@ a{
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+	cursor: pointer;
 }
 
 #filter_info_icon{
@@ -552,8 +557,9 @@ section{
 	justify-content: space-around;
 }
 
-footer a{
+.footer_section a{
 	margin-top: 10px;
+	transition: transform .2s;
 }
 
 .footer_about{
@@ -620,6 +626,15 @@ footer a{
 
 .housing_showmore:hover{
 	color: #0065FC;
+}
+
+.footer_section a:hover{
+	color: #0065FC;
+	transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-o-transform: scale(1.02);
 }
 
 /*****ANIMATIONS*****/
