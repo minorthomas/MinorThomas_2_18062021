@@ -193,6 +193,11 @@ a{
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 	cursor: pointer;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
 #filter_family_icon{
@@ -206,6 +211,11 @@ a{
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 	cursor: pointer;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
 #filter_heart_icon{
@@ -219,6 +229,11 @@ a{
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 	cursor: pointer;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
 #filter_pets_icon{
@@ -232,6 +247,11 @@ a{
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 	cursor: pointer;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
 #filter_info_icon{
@@ -614,6 +634,19 @@ section{
 .filter_button:hover{
 	background-color: #DEEBFF;
 	color: #0065FC;
+}
+
+.filter_button:hover > #filter_economy_icon{
+	background-color: #FFF;
+}
+.filter_button:hover > #filter_family_icon{
+	background-color: #FFF;
+}
+.filter_button:hover > #filter_heart_icon{
+	background-color: #FFF;
+}
+.filter_button:hover > #filter_pets_icon{
+	background-color: #FFF;
 }
 
 .housing_card:hover{
