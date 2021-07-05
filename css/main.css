@@ -74,14 +74,14 @@ a{
 
 .search h1{
 	font-weight: 800;
-	font-size: 1.1em;
+	font-size: 1.5em;
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
 
-.search h2{
+.search p{
 	font-weight: 500;
-	font-size: 0.9em;
+	font-size: 1em;
 	margin: 0;
 }
 
@@ -338,12 +338,12 @@ a{
 	transition: transform .2s;
 }
 
-.popular_card h2{
-	font-size: 1em;
+.popular_card h3{
+	font-size: 1.2em;
 }
 
 .popular_card p{
-	font-size: 0.85em;
+	font-size: 1em;
 }
 
 .popular_card_img{
@@ -422,13 +422,13 @@ a{
 	transition: transform .2s;
 }
 
-.housing_card h2{
-	font-size: 1.1em;
+.housing_card h3{
+	font-size: 1.2em;
 	margin: 0;
 }
 
 .housing_card p{
-	font-size: 0.85em;
+	font-size: 0.9em;
 	margin: 0;
 }
 
