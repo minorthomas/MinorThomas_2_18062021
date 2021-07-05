@@ -58,7 +58,7 @@ a{
 	grid-area: navbar_housing;
 	border-bottom: solid 3px #0065FC;
 	color: #0065FC;
-	font-weight: 600;
+	font-weight: 500;
 }
 .navbar_button_activity{
 	grid-area: navbar_activity;
@@ -273,6 +273,10 @@ a{
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+}
+
+.hosting span{
+	font-weight: 600;
 }
 
 /*****STARS*****/

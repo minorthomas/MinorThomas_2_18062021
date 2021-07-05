@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Trouvez l'hôtel qui vous convient à partir de 23€ la nuit dans les plus belles villes de France">
     <link rel="stylesheet" href="css/main.css"> <!--Mobile version-->
     <link rel="stylesheet" href="css/tablet.css"> <!--Tablet version-->
     <link rel="stylesheet" href="css/desktop.css"> <!--Desktop version-->
     <!--FONT-->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
     <!---->
     <title>Réservia</title>
 </head>
@@ -24,17 +25,17 @@
         </nav>
     </header>
     <main>
-        <div class="search container">
+        <section class="search container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou en pleine nature</h2>
-            <div class="search_textzone">
+            <nav class="search_textzone">
                 <i class="fas fa-map-marker-alt" id="search_position_icon"></i>
                 <input type="text" placeholder="Marseille, France" class="search_example">
                 <button class="search_button search_button_desktop">Rechercher</button>
                 <button class="search_button"><i class="fas fa-search" id="search_searching_icon"></i></button>
-            </div>
-        </div>
-        <div class="filter container">
+            </nav>
+        </section>
+        <section class="filter container">
             <nav class="filter_nav">
                 <h2>Filtres</h2>
                 <div class="filter_buttons">
@@ -60,9 +61,9 @@
                 <i class="fas fa-info" id="filter_info_icon"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </div>        
-        <div class="hosting container">
-            <section class="housing anchor_housing">
+        </section>        
+        <section class="hosting container">
+            <article class="housing anchor_housing">
                 <div class="housing_grid">                
                     <h2 class="housing_title housing_area_title">Hébergements à Marseille</h2>
                     <a href="#" title="Auberge la Cannebière" class="housing_card cards housing_area_1">
@@ -163,8 +164,8 @@
                     </a>
                     <a href="#" class="housing_showmore housing_area_showmore">Afficher plus</a>
                 </div>
-            </section>
-            <aside class="popular">
+            </article>
+            <article class="popular">
                 <div class="popular_grid">
                     <div class="popular_title">
                         <h2>Les plus populaires</h2>
@@ -219,10 +220,10 @@
                         </div>
                     </a>
                 </div>
-            </aside>
-        </div>
+            </article>
+        </section>
         <section class="activity" id="anchor_activity">
-            <div class="activity_grid container">
+            <article class="activity_grid container">
                 <h2 class="activity_title activity_area_title">Activités à Marseille</h2>
                 <a href="#" title="Vieux port" class="activity_card cards activity_area_1">
                     <img src="assets/img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="activity_card_img activity_card_img_large" alt="Vieux port">
@@ -248,7 +249,7 @@
                     <img src="assets/img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="activity_card_img activity_card_img_medium" alt="Parc Longchamp">
                     <h2 class="activity_card_title">Parc Longchamp</h2>
                 </a>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
