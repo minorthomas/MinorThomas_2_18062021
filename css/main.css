@@ -628,8 +628,6 @@ section{
 	-moz-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	-o-transform: scale(1.05);
-	-webkit-animation: text-shadow-drop-center 0.6s both;
-	animation: text-shadow-drop-center 0.6s both;
 }
 
 .filter_button:hover{
@@ -689,22 +687,3 @@ section{
 	-ms-transform: scale(1.02);
 	-o-transform: scale(1.02);
 }
-
-/*****ANIMATIONS*****/
-
-@-webkit-keyframes text-shadow-drop-center {
-	0% {
-	  text-shadow: 0 0 0 rgba(0, 101, 252, 0);
-	}
-	100% {
-	  text-shadow: 0 0 18px rgba(0, 101, 252, 0.50);
-	}
-  }
-  @keyframes text-shadow-drop-center {
-	0% {
-	  text-shadow: 0 0 0 rgba(0, 101, 252, 0);
-	}
-	100% {
-	  text-shadow: 0 0 18px rgba(0, 101, 252, 0.50);
-	}
-  }
