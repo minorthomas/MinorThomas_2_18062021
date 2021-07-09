@@ -399,9 +399,14 @@ a{
 						 "popular_area_3";
 }
 
+.popular_card_desc_title h3{
+	margin: 10px 0;
+}
+
 .popular_card_desc_title p{
 	margin: 5px 0 0 0;
 }
+
 
 /*****HOUSING*****/
 
