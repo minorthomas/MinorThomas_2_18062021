@@ -604,7 +604,6 @@ section{
 
 .footer_section a{
 	margin-top: 10px;
-	transition: transform .2s;
 }
 
 .footer_about{
@@ -686,9 +685,5 @@ section{
 
 .footer_section a:hover{
 	color: #0065FC;
-	transform: scale(1.02);
-	-webkit-transform: scale(1.02);
-	-moz-transform: scale(1.02);
-	-ms-transform: scale(1.02);
-	-o-transform: scale(1.02);
+	text-decoration: underline;
 }
